@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- FrameLayout to hold both images -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="172dp"
+            android:layout_height="121dp"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/alert_dark_frame" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="140dp"
+            android:layout_height="137dp"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/alert_light_frame" />
+    </FrameLayout>
+
+    <!-- Button below FrameLayout -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="92dp"
+        android:layout_gravity="center"
+        android:text="Button" />
+
+</LinearLayout>
+
